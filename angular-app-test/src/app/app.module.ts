@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutusComponent
+    AboutusComponent,
+    PropertybindingComponent
   ],
   imports: [
     BrowserModule,
