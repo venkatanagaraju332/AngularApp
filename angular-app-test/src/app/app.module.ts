@@ -11,6 +11,10 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { TemplatereferencevariablesComponent } from './templatereferencevariables/templatereferencevariables.component';
 import { TwowWaybindingComponent } from './twow-waybinding/twow-waybinding.component';
 import { FormsModule } from '@angular/forms';
+import { NgifdirectiveComponent } from './ngifdirective/ngifdirective.component';
+import { NgswitchdirectiveComponent } from './ngswitchdirective/ngswitchdirective.component';
+import { NgfordirectiveComponent } from './ngfordirective/ngfordirective.component';
+import { ComponentinteractionComponent } from './componentinteraction/componentinteraction.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { FormsModule } from '@angular/forms';
     StylebindingComponent,
     EventbindingComponent,
     TemplatereferencevariablesComponent,
-    TwowWaybindingComponent
+    TwowWaybindingComponent,
+    NgifdirectiveComponent,
+    NgswitchdirectiveComponent,
+    NgfordirectiveComponent,
+    ComponentinteractionComponent
   ],
   imports: [
     BrowserModule,
