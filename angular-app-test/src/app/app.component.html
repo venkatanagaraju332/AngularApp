@@ -15,5 +15,6 @@
     <div class="app-ngifdirective"></div>
     <div class="app-ngswitchdirective"> </div>
     <div class="app-ngfordirective"> </div>
-    <div class="app-componentinteraction"></div>
+    <div><app-componentinteraction (childEvent)="message=$event" [parentData]="name"> </app-componentinteraction></div>
+    <div><h1>{{message}}</h1></div>
 </div>
