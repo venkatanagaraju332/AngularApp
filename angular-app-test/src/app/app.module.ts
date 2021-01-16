@@ -8,6 +8,9 @@ import { PropertybindingComponent } from './propertybinding/propertybinding.comp
 import { ClassbindingComponent } from './classbinding/classbinding.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
+import { TemplatereferencevariablesComponent } from './templatereferencevariables/templatereferencevariables.component';
+import { TwowWaybindingComponent } from './twow-waybinding/twow-waybinding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { EventbindingComponent } from './eventbinding/eventbinding.component';
     PropertybindingComponent,
     ClassbindingComponent,
     StylebindingComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    TemplatereferencevariablesComponent,
+    TwowWaybindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
