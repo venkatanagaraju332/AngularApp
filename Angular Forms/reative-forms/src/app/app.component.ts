@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+/*import { FormControl, FormGroup } from '@angular/forms';*/
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,21 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  registraionForm = new FormGroup({
+
+    constructor(private fb:FormBuilder){ }
+
+    registraionForm = this.fb.group({
+      userName :['VenkataNagaraju'],
+      password : [],
+      confirmPassword :[],
+    address:this.fb.group({
+      city : [],
+      state : [],
+      postalCode: []
+      })
+    });
+
+  /*registraionForm = new FormGroup({
     userName : new FormControl('VenkataNagaraju'),
     password : new FormControl(''),
     confirmPassword :new FormControl(''),
@@ -16,9 +31,10 @@ export class AppComponent {
       state : new FormControl(''),
       postalCode : new FormControl('')
     })
-  });
-  loadApiData(){
-    /*this.registraionForm.setValue({
+  });*
+
+  /*loadApiData(){
+    this.registraionForm.setValue({
       userName :'VenkataNagaraju',
       password : 'test',
       confirmPassword :'test',
@@ -27,11 +43,11 @@ export class AppComponent {
       state : 'A.P',
       postalCode: '522413'
       }
-    });*/
+    });*
     this.registraionForm.patchValue({
       userName :'VenkataNagaraju',
       password : 'test',
       confirmPassword :'test'
     }); 
-  }
+  }*/
 }
