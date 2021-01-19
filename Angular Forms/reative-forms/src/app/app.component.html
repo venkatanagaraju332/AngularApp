@@ -1,5 +1,6 @@
 <div class="container-fulid">
-  <h1>Registration Form</h1>  
+  <h1>Registration Form</h1>    
+  {{registraionForm.value | json}}
   <form [formGroup]="registraionForm">  
     <div class="form-group">
       <label>Username</label>
@@ -13,9 +14,23 @@
       <label>Confirm Password</label>
       <input formControlName="confirmPassword"  type="password"  class="form-control">
     </div>
+    <div formGroupName="address">
+      <div class="form-group">
+        <label>City</label>
+        <input formControlName="city" type="text" class="form-control">      
+      </div>
+      <div class="form-group">
+        <label>State</label>
+        <input formControlName="state" type="text" class="form-control">      
+      </div>
+      <div class="form-group">
+        <label>Postal Code</label>
+        <input formControlName="postalCode" type="text" class="form-control">      
+      </div>
+    </div>
     <button class="btn btn-primary" type="submit">Register</button>
+    <button (click)="loadApiData()" class="btn btn-secondry ml-2" type="submit">Load API Data</button>
   </form>
-  {{registraionForm.value | json}}
   </div>
   
   
