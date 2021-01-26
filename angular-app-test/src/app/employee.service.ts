@@ -5,16 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class EmployeeService {
 
-  constructor() { }
   getEmployees(){
-    return[
+    return [
       {"id": 1, "name": "Raju", "age": 35},
       {"id": 2, "name": "NagaRaju","age": 36},
       {"id": 3, "name": "VenkatRaju","age": 37},
       {"id": 4, "name": "TRaju", "age": 38},
       {"id": 5, "name": "VRaju", "age": 39},
-      {"id": 6, "name": "LRaju", "age": 40},
+      {"id": 6, "name": "LRaju", "age": 40}
     ];
   }
+
+  constructor() { }
+  
 
 }

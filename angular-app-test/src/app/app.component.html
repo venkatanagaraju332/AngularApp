@@ -17,10 +17,10 @@
     <div class="app-ngfordirective"> </div>
     <div><app-componentinteraction (childEvent)="message=$event" [parentData]="name"> </app-componentinteraction></div>
     <div><h1>{{message}}</h1></div>     
-    <div class="app-pipes"></div>
-    <app-employee-list></app-employee-list>
-    <app-employee-detail></app-employee-detail>
+    <div class="app-pipes"></div>    
     <h1>{{pageTitle}}</h1>
     <button (click)="incrementCount()">Count</button>
-    <h5>Count Value is = {{count}}</h5>   
+    <h5>Count Value is = {{count}}</h5>  
+    <app-employee-list></app-employee-list>
+    <app-employee-detail></app-employee-detail> 
 </div>
