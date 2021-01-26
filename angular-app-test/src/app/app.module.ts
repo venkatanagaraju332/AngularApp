@@ -23,6 +23,7 @@ import { HttpClientModule} from '@angular/common/http';
 
 import  { myRoutings } from './app-routing.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
