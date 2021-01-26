@@ -16,10 +16,12 @@ import { NgswitchdirectiveComponent } from './ngswitchdirective/ngswitchdirectiv
 import { NgfordirectiveComponent } from './ngfordirective/ngfordirective.component';
 import { ComponentinteractionComponent } from './componentinteraction/componentinteraction.component';
 import { PipesComponent } from './pipes/pipes.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+/*import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';*/
 import { EmployeeService } from './employee.service';
 import { HttpClientModule} from '@angular/common/http';
+
+import  { myRoutings } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -36,8 +38,9 @@ import { HttpClientModule} from '@angular/common/http';
     NgfordirectiveComponent,
     ComponentinteractionComponent,
     PipesComponent,
-    EmployeeListComponent,
-    EmployeeDetailComponent
+    /*EmployeeListComponent,
+    EmployeeDetailComponent*/
+    myRoutings
   ],
   imports: [
     BrowserModule,
