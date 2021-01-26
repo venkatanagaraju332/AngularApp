@@ -7,10 +7,12 @@ import { catchError } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
+
 export class EmployeeService {
 
   constructor(private _http:HttpClient) { }
   private _url= '../assets/data/employees.json';
+
   getEmployees():Observable<IEmployee[]>{
     /*return [
       {"id": 1, "name": "Raju", "age": 35},
@@ -20,15 +22,13 @@ export class EmployeeService {
       {"id": 5, "name": "VRaju", "age": 39},
       {"id": 6, "name": "LRaju", "age": 40}
     ];*/
-
     return this._http.get<IEmployee[]>
     (this._url)
     .pipe(catchError(this.errorHandler));
   }
 
   errorHandler(error : HttpErrorResponse){
-      return throwError(error.message  || "Unknow  Server messag....");
-      
+      return throwError(error.message  || "Unknow  Server messag....");      
   }
 
 }

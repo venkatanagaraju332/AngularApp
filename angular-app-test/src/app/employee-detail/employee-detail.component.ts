@@ -8,19 +8,19 @@ import { EmployeeService } from '../employee.service';
   <h1>{{errMsg}}</h1>
   <ul *ngFor="let employee of employees">
       <li>{{employee.id}} {{employee.name}} {{employee.age}}</li>
-  </ul>
-  
+  </ul>  
   `,
   styleUrls: ['./employee-detail.component.css']
 })
 export class EmployeeDetailComponent implements OnInit {
   public employees = [] as  any;
   public errMsg: any;
+
   constructor(private _empdata:EmployeeService) { }
 
   ngOnInit(){
     this._empdata.getEmployees()
    .subscribe(data => this.employees = data, error => this.errMsg = error);
   }
-
+  
 }
