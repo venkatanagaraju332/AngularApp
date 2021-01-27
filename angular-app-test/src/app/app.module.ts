@@ -24,6 +24,8 @@ import { HttpClientModule} from '@angular/common/http';
 import  { myRoutings } from './app-routing.module';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,8 @@ import  { myRoutings } from './app-routing.module';
     /*EmployeeListComponent,
     EmployeeDetailComponent*/
     myRoutings
+    /*CourseListComponent,
+    CourseDetailsComponent*/
   ],
   imports: [
     BrowserModule,
