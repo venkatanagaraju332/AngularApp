@@ -30,8 +30,8 @@ export class CourseListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSelect(x: { id: any; }){
+  onSelect(x:any){
     this._routeservice.navigate(['/course',x.id]);//url creation
   }
-  
+
 }
