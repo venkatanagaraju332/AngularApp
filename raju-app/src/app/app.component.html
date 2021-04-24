@@ -1,0 +1,10 @@
+<p>Welcome  Venkata Nagaraju</p>
+
+<app-test (childinfo)="msg=$event" [toParent]="fromParent"></app-test>
+
+<h1>{{msg}}</h1>
+
+<app-student-list></app-student-list>
+<app-student-details></app-student-details>
+
+<router-outlet></router-outlet>
