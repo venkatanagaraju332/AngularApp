@@ -1,0 +1,21 @@
+.empControls{
+    width: 100%;
+    padding: 5%;
+    color: #fff;
+    background-color: #000;
+}
+.empControls > * {
+    width: 100%;
+}
+.myPadding{
+    padding: 0 0 10px;
+}
+mat-radio-group mat-radio-button{
+    margin: 0 0 0 10px;
+}
+.buttonRow button{
+    margin: 0 10px 10px 0;
+}
+.buttonRow button:hover{
+    opacity: 0.5;
+}

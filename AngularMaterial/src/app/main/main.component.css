@@ -1,0 +1,6 @@
+*{
+    padding: 0;
+}
+.fillspace{
+    flex:1 1 auto;
+}
