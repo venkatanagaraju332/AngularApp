@@ -1,4 +1,4 @@
-<form [formGroup]="empService.form" class="myForm">
+<form [formGroup]="empService.form" (submit)="onSubmit()" class="myForm">
   <mat-grid-list cols="2" rowHeight="400px">
 
     <mat-grid-tile>

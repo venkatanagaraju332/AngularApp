@@ -10,8 +10,10 @@ import { EmployeeComponent } from './main/employee/employee.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {EmployeeService} from './shared/employee.service';
 
-
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import {environment} from '../environments/environment';
+import { DatePipe } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,10 +25,13 @@ import {EmployeeService} from './shared/employee.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [
-    EmployeeService
+    EmployeeService,
+    DatePipe
   ],
   bootstrap: [AppComponent]
 })
