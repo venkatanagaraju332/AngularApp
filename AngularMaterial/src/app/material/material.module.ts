@@ -10,8 +10,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatTableModule} from '@angular/material/table';
 
 const materialComponents = [
   MatButtonModule,
@@ -23,7 +23,9 @@ const materialComponents = [
   MatSelectModule,
   MatNativeDateModule,
   MatDatepickerModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatSnackBarModule,
+  MatTableModule
 
 ];
 

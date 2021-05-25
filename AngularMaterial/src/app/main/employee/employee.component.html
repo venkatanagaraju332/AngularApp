@@ -42,8 +42,8 @@
           <mat-label>Department :</mat-label>
           <mat-select formControlName="department">
             <mat-option>None</mat-option>
-            <ng-container *ngFor="let x of departments">
-              <mat-option value="{{x.id}}">{{x.name}} </mat-option>
+            <ng-container *ngFor="let x of deptService.array">
+              <mat-option value="{{x.$key}}">{{x.code}}-{{x.name}} </mat-option>
             </ng-container>
           </mat-select>
         </mat-form-field>

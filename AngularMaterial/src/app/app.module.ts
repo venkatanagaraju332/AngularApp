@@ -14,11 +14,16 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import {environment} from '../environments/environment';
 import { DatePipe } from '@angular/common';
+import {DepartmentService} from './shared/department.service';
+import {NotificationService} from './shared/notification.service';
+import { EmployeeListComponent } from './main/employee-list/employee-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,9 @@ import { DatePipe } from '@angular/common';
   ],
   providers: [
     EmployeeService,
-    DatePipe
+    DatePipe,
+    DepartmentService,
+    NotificationService
   ],
   bootstrap: [AppComponent]
 })
