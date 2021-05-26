@@ -1,8 +1,8 @@
 .empControls{
     width: 100%;
     padding: 5%;
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color:#fff;
 }
 .empControls > * {
     width: 100%;

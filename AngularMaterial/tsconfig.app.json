@@ -3,8 +3,14 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "module": "es6",
+    "baseUrl": "",
+    "types": ["node"]
   },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
   "files": [
     "src/main.ts",
     "src/polyfills.ts"
