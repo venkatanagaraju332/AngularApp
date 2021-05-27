@@ -12,7 +12,7 @@ export class EmployeeListComponent implements OnInit {
 
   listData!: MatTableDataSource<any>;
 
-  displayedColumns: string[] = ['fullName','email','moblie','city'];
+  displayedColumns: string[] = ['fullName','gender','email','mobile','city','deparment','hireDate','isPermanent'];
 
   constructor(public empService:EmployeeService) { }
 
