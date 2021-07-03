@@ -1,15 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import RajuClass from './components/RajuClass';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to React-APP
-        </p>        
-      </header>
+      <Hello></Hello>
+      <RajuClass></RajuClass>
     </div>
   );
 }
