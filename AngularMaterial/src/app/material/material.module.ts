@@ -13,6 +13,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 const materialComponents = [
   MatButtonModule,
   MatToolbarModule,
@@ -26,7 +28,9 @@ const materialComponents = [
   MatCheckboxModule,
   MatSnackBarModule,
   MatTableModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
+  MatPaginatorModule,
+  MatSortModule
 
 ];
 
