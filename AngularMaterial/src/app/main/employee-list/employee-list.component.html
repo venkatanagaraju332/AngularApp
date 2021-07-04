@@ -6,11 +6,6 @@
       <mat-cell *matCellDef="let element"> {{element.fullName}} </mat-cell>
     </ng-container>
 
-    <ng-container matColumnDef="gender">
-      <mat-header-cell *matHeaderCellDef> Gender</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.gender}} </mat-cell>
-    </ng-container>
-
     <ng-container matColumnDef="email">
       <mat-header-cell *matHeaderCellDef> Email</mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
@@ -26,6 +21,11 @@
       <mat-cell *matCellDef="let element"> {{element.city}} </mat-cell>
     </ng-container>
 
+    <!--<ng-container matColumnDef="gender">
+      <mat-header-cell *matHeaderCellDef> Gender</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.gender}} </mat-cell>
+    </ng-container>
+
     <ng-container matColumnDef="deparment">
       <mat-header-cell *matHeaderCellDef> Department</mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.deparment}} </mat-cell>
@@ -39,11 +39,16 @@
     <ng-container matColumnDef="isPermanent">
       <mat-header-cell *matHeaderCellDef> Is Permanent</mat-header-cell>
       <mat-cell *matCellDef="let element"> {{element.isPermanent}} </mat-cell>
-    </ng-container>
+    </ng-container>-->
 
+    <ng-container matColumnDef="loading">
+      <mat-footer-cell *matFooterCellDef colspan="6">
+        Loading Data ...
+      </mat-footer-cell>
+    </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-    
+    <mat-footer-row *matFooterRowDef="['loading']" [ngClass]="{'hide':listData != null}"></mat-footer-row>
   </mat-table>
 </div>
